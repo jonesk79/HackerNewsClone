@@ -7,8 +7,6 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'factory_girl_rails'
-
 
 group :development do
   gem 'better_errors'
@@ -18,8 +16,10 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 group :test do
   gem 'shoulda-matchers'
+  gem 'capybara'
 end

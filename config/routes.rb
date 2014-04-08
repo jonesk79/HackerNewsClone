@@ -1,7 +1,5 @@
 Hackernewsclone::Application.routes.draw do
   resources :links do
-    resources :comments, :only => [:new, :create]
+    resources :comments
   end
-
-  resources :comments, :except => [:new, :create]
 end

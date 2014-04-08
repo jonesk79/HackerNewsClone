@@ -3,6 +3,7 @@
 <h1>View links</h1>
 <h2><%= @link.name %></h2>
 
+<p><%= link_to "Add comment", new_link_comment_path(@link), :class=> "btn btn-default" %></p>
 <p><%= link_to "Edit", edit_link_path(@link), :class => "btn btn-default" %></p>
 <p><%= link_to "Delete", link_path(@link),
                          :confirm => "You sure?",
