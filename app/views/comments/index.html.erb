@@ -1,0 +1,11 @@
+<%= content_for(:title, "Comments | HackerNewsClone") %>
+
+<h1>Comments</h1>
+
+<ul>
+  <%= @comments.each do |comment| %>
+  <li><a href="/comments/<%= comment.id %>"><%= commment.name %></a></li>
+  <% end %>
+</ul>
+
+<%= link_to "Add a new comment", new_link_comment_path, :class=> "btn btn-default" %>
